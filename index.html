@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PARR-TB Flipbook</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/turn.js@4/turn.min.js"></script>
+  <style>
+    body {
+      background-color: #eaeaea;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #flipbook {
+      width: 90%;
+      height: 90vh;
+    }
+    #flipbook .page {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+    }
+    #flipbook img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <div id="flipbook">
+    <div class="page"><img src="page_1.jpg" alt="Page"></div>
+    <div class="page"><img src="page_2.jpg" alt="Page"></div>
+    <div class="page"><img src="page_3.jpg" alt="Page"></div>
+    <div class="page"><img src="page_4.jpg" alt="Page"></div>
+
+  </div>
+  <script>
+    $('#flipbook').turn({ 
+      width: '100%',
+      height: '100%',
+      autoCenter: true
+    });
+  </script>
+</body>
+</html>
