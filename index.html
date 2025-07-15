@@ -12,34 +12,36 @@
       margin: 0;
       padding: 0;
       background: #eaeaea;
-      height: 100vh;
       width: 100%;
+      height: 100%;
     }
 
     .swiper {
       width: 100%;
       max-width: 900px;
-      height: 100vh;
       margin: 0 auto;
+      height: auto;
     }
 
     .swiper-slide {
+      background: white;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: white;
+      padding: 20px;
     }
 
     .swiper-slide img {
       width: 100%;
       height: auto;
+      max-height: 90vh;
       object-fit: contain;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
     }
   </style>
 </head>
 <body>
 
-  <!-- Swiper container -->
   <div class="swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="page_1.jpg" alt="Page 1" /></div>
@@ -49,16 +51,13 @@
     </div>
   </div>
 
-  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Init Swiper -->
   <script>
     const swiper = new Swiper('.swiper', {
       direction: 'horizontal',
       loop: false,
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 10,
       allowTouchMove: true,
       keyboard: {
         enabled: true,
