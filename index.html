@@ -1,22 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PARR-TB Flipbook</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/turn.js@4/turn.min.js"></script>
+  <meta charset="UTF-8">
+  <title>PARR-TB Brochure PDF Viewer</title>
   <style>
-    body { margin: 0; background: #eaeaea; }
-    #flipbook { width: 100%; height: 100vh; margin: auto; }
-    .page { background: white; width: 100%; height: 100vh; line-height: 100vh; text-align: center; }
-    iframe { width: 100%; height: 100vh; border: none; }
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
   </style>
 </head>
 <body>
-  <div id="flipbook">
-    <iframe src="book.pdf"></iframe>
-  </div>
+  <iframe src="PARR-TB_MO_Brochure_v4.pdf#toolbar=1&navpanes=0&scrollbar=1"></iframe>
 </body>
 </html>
