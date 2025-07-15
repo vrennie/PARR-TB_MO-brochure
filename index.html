@@ -24,6 +24,7 @@
     }
 
     .swiper-slide {
+      display: flex;
       justify-content: center;
       align-items: center;
       background: white;
@@ -38,7 +39,7 @@
 </head>
 <body>
 
-  <!-- Swiper -->
+  <!-- Swiper container -->
   <div class="swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="page_1.jpg" alt="Page 1" /></div>
@@ -51,15 +52,17 @@
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+  <!-- Init Swiper -->
   <script>
     const swiper = new Swiper('.swiper', {
-      direction: 'vertical',
+      direction: 'horizontal',
       loop: false,
+      slidesPerView: 1,
+      spaceBetween: 0,
       allowTouchMove: true,
       keyboard: {
         enabled: true,
       },
-      navigation: false,
     });
   </script>
 </body>
